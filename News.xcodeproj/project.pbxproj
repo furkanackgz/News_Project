@@ -13,6 +13,10 @@
 		0B4E35B328159A510000593B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4E35B128159A510000593B /* Main.storyboard */; };
 		0B4E35B528159A540000593B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B4E35B428159A540000593B /* Assets.xcassets */; };
 		0B4E35B828159A540000593B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B4E35B628159A540000593B /* LaunchScreen.storyboard */; };
+		0B4E35C028159D730000593B /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E35BF28159D730000593B /* NewsCell.swift */; };
+		0B4E35C62815A1E50000593B /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E35C52815A1E50000593B /* News.swift */; };
+		0B4E35C82815AFCE0000593B /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E35C72815AFCE0000593B /* Webservice.swift */; };
+		0B4E35CA2815E7150000593B /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E35C92815E7150000593B /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		0B4E35B428159A540000593B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B4E35B728159A540000593B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B4E35B928159A540000593B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B4E35BF28159D730000593B /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		0B4E35C52815A1E50000593B /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		0B4E35C72815AFCE0000593B /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		0B4E35C92815E7150000593B /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		0B4E35AA28159A510000593B /* News */ = {
 			isa = PBXGroup;
 			children = (
-				0B4E35AB28159A510000593B /* AppDelegate.swift */,
-				0B4E35AD28159A510000593B /* SceneDelegate.swift */,
-				0B4E35AF28159A510000593B /* ViewController.swift */,
+				0B4E35C42815A1820000593B /* Service */,
+				0B4E35C22815A1740000593B /* View */,
+				0B4E35C12815A16B0000593B /* Model */,
+				0B4E35CB2815E77A0000593B /* View Model */,
 				0B4E35B128159A510000593B /* Main.storyboard */,
 				0B4E35B428159A540000593B /* Assets.xcassets */,
 				0B4E35B628159A540000593B /* LaunchScreen.storyboard */,
 				0B4E35B928159A540000593B /* Info.plist */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		0B4E35C12815A16B0000593B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B4E35C52815A1E50000593B /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B4E35C22815A1740000593B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B4E35AB28159A510000593B /* AppDelegate.swift */,
+				0B4E35AD28159A510000593B /* SceneDelegate.swift */,
+				0B4E35AF28159A510000593B /* ViewController.swift */,
+				0B4E35BF28159D730000593B /* NewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B4E35C42815A1820000593B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0B4E35C72815AFCE0000593B /* Webservice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0B4E35CB2815E77A0000593B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B4E35C92815E7150000593B /* NewsViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +184,10 @@
 			files = (
 				0B4E35B028159A510000593B /* ViewController.swift in Sources */,
 				0B4E35AC28159A510000593B /* AppDelegate.swift in Sources */,
+				0B4E35C82815AFCE0000593B /* Webservice.swift in Sources */,
+				0B4E35C028159D730000593B /* NewsCell.swift in Sources */,
+				0B4E35CA2815E7150000593B /* NewsViewModel.swift in Sources */,
+				0B4E35C62815A1E50000593B /* News.swift in Sources */,
 				0B4E35AE28159A510000593B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
